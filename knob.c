@@ -72,7 +72,7 @@ defer:
     return result;
 }
 
-#define LAB_NAME "TheClasses"
+#define LAB_NAME "GameOfLife"
 bool build_game(void)
 {
     bool result = true;

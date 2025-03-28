@@ -111,7 +111,7 @@ int main(void) {
     const int WidthOfTheScreen = 900;
     const int HeightOfTheScreen = 900;
     const int SizeOfTheCells = 5;
-    int FramesPerSeconds = 24;
+    int FramesPerSeconds = 10;
 
 
     InitWindow(WidthOfTheScreen, HeightOfTheScreen, "Game of Life");//gives the size and name
