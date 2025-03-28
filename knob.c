@@ -72,7 +72,7 @@ defer:
     return result;
 }
 
-#define LAB_NAME "entrypoint"
+#define LAB_NAME "GameOfLife"
 bool build_game(void)
 {
     bool result = true;
@@ -92,7 +92,7 @@ bool build_game(void)
     build_raylib(&cmd);
     knob_cmd_append(&cmd,knob_temp_sprintf("./src/%s.cpp",LAB_NAME),"-o","./Deployment/game.exe");
     knob_cmd_append(&cmd, "-lkernel32","-lwinmm", "-lgdi32","-lopengl32");
-    knob_cmd_append(&cmd,"./src/main.cpp");
+    knob_cmd_append(&cmd,"./src/GameOfLife.cpp");//had to modify this otherwise the game would give me an error and fail to launch
     if (!knob_cmd_run_sync(cmd)) knob_return_defer(false);
     
 defer:
