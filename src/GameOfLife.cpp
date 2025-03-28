@@ -55,7 +55,7 @@ int Simulation::HowManyLivingNeighborsFinder(int row, int column) {
         {-1, -1},   //up-left
         {-1, 1},    //up-right
         {1, -1},    //down-left
-        {11, 1},    //down-right
+        {1, 1},    //down-right
     };
 
     for (const auto& offset : OffsetsFromNeighbor) {
@@ -111,7 +111,7 @@ int main(void) {
     const int WidthOfTheScreen = 900;
     const int HeightOfTheScreen = 900;
     const int SizeOfTheCells = 5;
-    int FramesPerSeconds = 10;
+    int FramesPerSeconds = 12;
 
 
     InitWindow(WidthOfTheScreen, HeightOfTheScreen, "Game of Life");//gives the size and name
