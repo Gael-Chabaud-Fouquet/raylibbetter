@@ -85,7 +85,7 @@ bool build_game(void)
     if (!knob_mkdir_if_not_exists("./build")) {
         knob_return_defer(false);
     }
-    knob_cmd_append(&cmd, ZIG_PATH,"c++");
+    knob_cmd_append(&cmd, ZIG_PATH,"cc");
     knob_cmd_append(&cmd, "-static");
     knob_cmd_append(&cmd, "--debug", "-std=c++11", "-fno-sanitize=undefined","-fno-omit-frame-pointer");
     knob_cmd_append(&cmd, "-I"RAYLIB_PATH"/src");
