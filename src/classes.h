@@ -7,12 +7,16 @@ class Spaceship {
     private:
     int PosX;
     int PosY;
+    int Width;
+    int Height;
     int Velocity;
+    float RotateAngle;
 
     public:
     Spaceship(int StartX, int StartY);
     void Draw();
     void Move();
+    void HyperSpace();
 };
 
 class Asteroid {
@@ -35,4 +39,13 @@ class Saucer {
     private:
     int PosX;
     int PosY;
+    int Width;
+    int Height;
+    int VelocityX;
+    int VelocityY;
+    
+    public:
+    Saucer(int StartX, int StartY);
+    void Draw();
+    void Move();
 };

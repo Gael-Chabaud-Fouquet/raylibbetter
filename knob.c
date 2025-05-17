@@ -85,7 +85,8 @@ bool build_game(void)
     if (!knob_mkdir_if_not_exists("./build")) {
         knob_return_defer(false);
     }
-    knob_cmd_append(&cmd, ZIG_PATH,"cc");
+    //a cause d'un bug, la ligne 89 a ete change, changeant le "c++" en "cc", ce qui fait que les libraries a implementer a l'aide des #include <librarie> ne sont plus utilisabe, car cela cause des buglors du buildage
+    knob_cmd_append(&cmd, ZIG_PATH,"cc"); 
     knob_cmd_append(&cmd, "-static");
     knob_cmd_append(&cmd, "--debug", "-std=c++11", "-fno-sanitize=undefined","-fno-omit-frame-pointer");
     knob_cmd_append(&cmd, "-I"RAYLIB_PATH"/src");
