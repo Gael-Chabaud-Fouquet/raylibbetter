@@ -1,0 +1,4 @@
+1. changement de c++ a cc a la ligne 89 dans knob.c, sinon le jeu prenait une quantité extremme de temp (ma plus longue attente == un peu moinsde 10 minutes)
+2. le fix du bug 1 apporte un bug, le libraries a implementer avec "#include <la_librarie>" font crasher le jeu lors du build
+3. pour remedier au bug 2, il n'y a pas de libraries avec <>, seul raylib.h et classes.h sont implementable, car les 2 utilise des "" et non des <>
+4. le vaissea vas parfois se bloquer apres un jup en hyperespace, juste re-jump pour se decoincer (par coincer je veut dire que le vaisseau vas se tp en haut lors d'une tentative de mouvement et ne voudras plus bouger)
