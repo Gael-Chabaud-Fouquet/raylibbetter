@@ -3,3 +3,4 @@
 3. pour remedier au bug 2, il n'y a pas de libraries avec <>, seul raylib.h et classes.h sont implementable, car les 2 utilise des "" et non des <>
 4. le vaissea vas parfois se bloquer apres un jup en hyperespace, juste re-jump pour se decoincer (par coincer je veut dire que le vaisseau vas se tp en haut lors d'une tentative de mouvement et ne voudras plus bouger)
 5. certaine soucoupes et certains asteroides vont semblé immobiles, maisils ont juste choisie une veleur extremement proche de 0 dans leur VelocityX et VelocityY
+6. il arrive que les soucouppes et asteroides spawn l'un dans l'autre et prennent les memes valeurs (ou tres similaires) pour les velocite et apparaissent donc fusionné
